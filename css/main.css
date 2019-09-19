@@ -70,6 +70,9 @@ a:focus {
 * {
   outline: none;
 }
+.index {
+  position: relative;
+}
 .index .title-block-hello {
   font-size: 16px;
   line-height: 22px;
@@ -120,4 +123,92 @@ a:focus {
   border-bottom: 1px dashed #3ED1FF;
   bottom: 2px;
   opacity: .5;
+}
+.index .works-block .works-block-title {
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #595959;
+  margin-bottom: 40px;
+}
+.index .works-block .works-block-list {
+  font-size: 0;
+}
+.index .works-block .works-block-list li {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 50px);
+  margin: 0 50px 100px;
+}
+.index .works-block .works-block-list li:nth-child(odd) {
+  margin-left: 0;
+}
+.index .works-block .works-block-list li:nth-child(even) {
+  margin-right: 0;
+}
+.index .works-block .works-block-list li img {
+  width: 100%;
+}
+.index .works-block .works-block-list li .works-item-title {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+.index .works-block .works-block-list li .works-item-desc {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #828282;
+  margin-bottom: 20px;
+}
+.index .works-block .works-block-list li .works-item-link {
+  font-size: 12px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #3ED1FF;
+  position: relative;
+}
+.index .works-block .works-block-list li .works-item-link:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: -16px;
+  width: 11px;
+  height: 8px;
+  background: url("../../img/arrow-icon.svg") no-repeat center center;
+  background-size: cover;
+  transition: all .3s;
+}
+.index .works-block .works-block-list li .works-item-link:hover:after {
+  right: -20px;
+}
+.index .pulser {
+  width: 150px;
+  height: 150px;
+  right: 0px;
+  top: 0px;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  background: green;
+  position: absolute;
+  animation: filtered 10000ms 0ms infinite alternate linear;
+  will-change: filter, transform;
+}
+.index .some-animation {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate(25px, -25px);
+}
+@keyframes filtered {
+  0% {
+    filter: hue-rotate(0deg) blur(150px);
+  }
+  100% {
+    filter: hue-rotate(360deg) blur(80px);
+  }
 }
