@@ -212,3 +212,21 @@ a:focus {
     filter: hue-rotate(360deg) blur(80px);
   }
 }
+@media screen and (max-width: 680px) {
+  .container {
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .index .works-block .works-block-list li {
+    width: 100%;
+    max-width: 260px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .index .contact-list li a {
+    font-size: 10px;
+  }
+}
