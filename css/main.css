@@ -161,9 +161,9 @@ a:focus {
   line-height: 18px;
   letter-spacing: -0.02em;
   color: #828282;
-  margin-bottom: 20px;
 }
 .index .works-block .works-block-list li .works-item-link {
+  margin-top: 20px;
   font-size: 12px;
   line-height: 22px;
   text-transform: uppercase;
